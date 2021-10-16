@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  build_mantis:
+    container_name: build_mantis_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    tty: true
+    command: /bin/bash
+
+    volumes:
+      - ./cpp:/usr/cpp
