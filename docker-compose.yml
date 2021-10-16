@@ -6,9 +6,5 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-
     tty: true
     command: /bin/bash
-
-    volumes:
-      - ./cpp:/usr/cpp
